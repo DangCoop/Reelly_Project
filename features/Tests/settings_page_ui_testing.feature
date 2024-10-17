@@ -5,7 +5,7 @@ Feature: Testing a settings page for a specific number of UI elements
 
   Scenario: User can go to settings and see the right number of UI elements
     Given Open Sign In page
-    When Enter email "*******" and "I***!"
+    When Enter email "antonov.resu@gmail.com" and "Internship2024!"
     And Click Continue Button
     And Click on settings option
     Then Verify correct URL opens for settings

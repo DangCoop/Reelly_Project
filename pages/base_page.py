@@ -38,3 +38,13 @@ class Page:
     def verify_partial_url(self, expected_partial_url):
         actual_url = self.driver.current_url
         assert expected_partial_url in actual_url, (f'Expected url {expected_partial_url} not in actual {actual_url}')
+
+    def verify_number_of_elements(self, expected_number_of_elements, *locator):
+        number = int(expected_number_of_elements)
+        options = self.driver.find_elements(*locator)
+        assert len(options) == number, f'Expected {number} cells, but got {len(options)}'
+        print(options)
+
+    def verify_btn_accessibility(self, *locator):
+        button = self.driver.find_element(*locator)
+        assert button.is_displayed(), "The 'connect the company' button is not available"

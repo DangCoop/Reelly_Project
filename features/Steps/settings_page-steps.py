@@ -3,9 +3,9 @@ from selenium.webdriver.common.by import By
 from time import sleep
 
 
-@then('Verify correct URL opens for settings')
-def correct_url_opens(context):
-    context.app.settings_page.verify_url()
+@then('Verify correct URL opens for {expected_url_part}')
+def correct_url_opens(context, expected_url_part):
+    context.app.settings_page.verify_correct_url(expected_url_part)
 
 
 @then('Verify there are {number} options for the settings')

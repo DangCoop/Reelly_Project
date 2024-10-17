@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7522c95e-6add-49f0-a89b-01cfd5bce86c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/features/Steps/main_page_steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/Steps/settings_page-steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/Steps/sign_in_page_steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/Tests/settings_page_ui_testing.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/settings_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/sign_in_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/Steps/settings_page-steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/Steps/settings_page-steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/Tests/settings_page_ui_testing.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Tests/settings_page_ui_testing.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/settings_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/settings_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +91,7 @@
       <updated>1728956752410</updated>
       <workItem from="1728956753748" duration="10154000" />
       <workItem from="1729040979299" duration="111000" />
-      <workItem from="1729042438882" duration="20586000" />
+      <workItem from="1729042438882" duration="24800000" />
     </task>
     <servers />
   </component>
@@ -117,6 +111,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Reelly_Project$settings_page_ui_testing_feature.coverage" NAME="settings_page_ui_testing.feature Coverage Results" MODIFIED="1729051350051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_Project$settings_page_ui_testing_feature_User_can_go_to_settings_and_see_the_right_number_of_UI_elements.coverage" NAME="settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements Coverage Results" MODIFIED="1729135337862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$settings_page_ui_testing_feature_User_can_go_to_settings_and_see_the_right_number_of_UI_elements.coverage" NAME="settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements Coverage Results" MODIFIED="1729140274310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
