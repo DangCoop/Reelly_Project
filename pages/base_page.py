@@ -30,3 +30,11 @@ class Page:
         self.wait.until(
             EC.visibility_of_element_located(locator),
             message='Element by locator {locator} not visible')
+
+    def verify_url(self, expected_url):
+        actual_url = self.driver.current_url
+        assert expected_url == actual_url, f'Expected url {expected_url} did not match actual {actual_url}'
+
+    def verify_partial_url(self, expected_partial_url):
+        actual_url = self.driver.current_url
+        assert expected_partial_url in actual_url, (f'Expected url {expected_partial_url} not in actual {actual_url}')
