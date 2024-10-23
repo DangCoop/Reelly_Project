@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7522c95e-6add-49f0-a89b-01cfd5bce86c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/features/Steps/secondary_page_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/Tests/secondary_page_functionality_testing.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/secondary_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/Steps/settings_page-steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/Steps/settings_page-steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/Steps/main_page_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/Steps/main_page_steps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/Tests/settings_page_ui_testing.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Tests/settings_page_ui_testing.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/settings_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/settings_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination.executor": "Run",
     "Behave.settings_page_ui_testing.feature.executor": "Run",
     "Behave.settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -50,7 +54,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination">
+    <configuration name="secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/secondary_page_functionality_testing.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open the Secondary deals page and go through the pagination" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly_Project" />
       <option name="ENV_FILES" value="" />
@@ -69,6 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination" />
         <item itemvalue="Behave.settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements" />
       </list>
     </recent_temporary>
@@ -91,7 +112,7 @@
       <updated>1728956752410</updated>
       <workItem from="1728956753748" duration="10154000" />
       <workItem from="1729040979299" duration="111000" />
-      <workItem from="1729042438882" duration="24800000" />
+      <workItem from="1729042438882" duration="42600000" />
     </task>
     <servers />
   </component>
@@ -111,6 +132,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Reelly_Project$settings_page_ui_testing_feature.coverage" NAME="settings_page_ui_testing.feature Coverage Results" MODIFIED="1729051350051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_Project$settings_page_ui_testing_feature_User_can_go_to_settings_and_see_the_right_number_of_UI_elements.coverage" NAME="settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements Coverage Results" MODIFIED="1729140274310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$settings_page_ui_testing_feature_User_can_go_to_settings_and_see_the_right_number_of_UI_elements.coverage" NAME="settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements Coverage Results" MODIFIED="1729140929452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_page_and_go_through_the_pagination.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination Coverage Results" MODIFIED="1729653303923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
