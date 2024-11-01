@@ -6,6 +6,13 @@ from time import sleep
 
 
 class SecondaryPage(Page):
+    FILTERS_BUTTON = (By.CSS_SELECTOR, ".filter-button")
+    WANT_TO_SELL_OPTION = (By.CSS_SELECTOR, "[wized='ListingTypeSell']")
+    WANT_TO_BUY_OPTION = (By.CSS_SELECTOR, "[wized='ListingTypeBuy']")
+    APPLY_FILTER_BUTTON = (By.CSS_SELECTOR, "[wized='applyFilterButtonMLS']")
+    LISTING_CARDS =(By.CSS_SELECTOR, ".listing-card")
+    SALE_TAG = (By.CSS_SELECTOR, ".for-sale-block")
+    BUY_TAG = (By.CSS_SELECTOR, ".for-sale-block")
 
     def go_to_final_page(self):
 
@@ -140,3 +147,121 @@ class SecondaryPage(Page):
 
             except Exception as e:
                 raise Exception(f"Error encountered during pagination: {e}")
+
+    def click_filters_button(self):
+        self.click(*self.FILTERS_BUTTON)
+
+    def choose_want_to_sell_option(self):
+        self.click(*self.WANT_TO_SELL_OPTION)
+        #sleep(8)
+
+    def choose_want_to_buy_option(self):
+        self.click(*self.WANT_TO_BUY_OPTION)
+
+    def click_apply_filter_button(self):
+        self.click(*self.APPLY_FILTER_BUTTON)
+        #sleep(8)
+
+    # Option 1: Verifying without iteration.
+    # def verify_sell_filter_works(self):
+    #
+    #     #all_cards = self.driver.find_elements(*self.LISTING_CARDS)
+    #     all_cards = self.wait.until(
+    #         EC.visibility_of_all_elements_located(self.LISTING_CARDS)
+    #     )
+    #
+    #     for card in all_cards:
+    #         tag = card.find_element(*self.SALE_TAG).text
+    #         assert tag, 'Card tag is not shown'
+    #         print(tag)
+
+    # Option 2: Verifying with iteration.
+    def verify_sell_filter_works(self):
+        # Start from page 1
+        page_count = 1
+
+        while True:
+            print(f"Checking page {page_count}...")
+
+            # Wait until all listing cards are visible on the current page
+            all_cards = self.wait.until(
+                EC.visibility_of_all_elements_located(self.LISTING_CARDS)
+            )
+
+            # Verify each card has the "for sale" tag
+            for card in all_cards:
+                tag = card.find_element(*self.SALE_TAG).text
+                assert tag, 'Card tag is not shown'
+                print(tag)
+
+            # Check if the "Next" button is present and clickable
+            try:
+                next_button = self.wait.until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, ".pagination__button.w-inline-block"))
+                )
+
+                # Check if the "Next" button is enabled; if not, we are on the last page
+                if not next_button.is_enabled():
+                    print("Reached the last page; no more pages to navigate.")
+                    # Exit the loop if the "Next" button is disabled
+                    break
+
+                # Click the "Next" button to go to the next page
+                next_button.click()
+                page_count += 1
+
+                # Wait for the page number or content to update (optional)
+                self.wait.until(
+                    EC.text_to_be_present_in_element((By.CSS_SELECTOR, "[wized='currentPageProperties']"), str(page_count))
+                )
+
+            except:
+                print("No more pages available or 'Next' button is not clickable.")
+                # Exit the loop if there are no more pages
+                break
+
+    def verify_buy_filter_works(self):
+
+        # Start from page 1
+        page_count = 1
+
+        while True:
+            print(f"Checking page {page_count}...")
+
+            # Wait until all listing cards are visible on the current page
+            all_cards = self.wait.until(
+                EC.visibility_of_all_elements_located(self.LISTING_CARDS)
+            )
+
+            # Verify each card has the "for sale" tag
+            for card in all_cards:
+                tag = card.find_element(*self.BUY_TAG).text
+                assert tag, 'Card tag is not shown'
+                print(tag)
+
+            # Check if the "Next" button is present and clickable
+            try:
+                next_button = self.wait.until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, ".pagination__button.w-inline-block"))
+                )
+
+                # Check if the "Next" button is enabled; if not, we are on the last page
+                if not next_button.is_enabled():
+                    print("Reached the last page; no more pages to navigate.")
+                    # Exit the loop if the "Next" button is disabled
+                    break
+
+                # Click the "Next" button to go to the next page
+                next_button.click()
+                page_count += 1
+
+                # Wait for the page number or content to update (optional)
+                self.wait.until(
+                    EC.text_to_be_present_in_element((By.CSS_SELECTOR, "[wized='currentPageProperties']"),
+                                                     str(page_count))
+                )
+
+            except:
+                print("No more pages available or 'Next' button is not clickable.")
+                # Exit the loop if there are no more pages
+                break
