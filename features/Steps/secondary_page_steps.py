@@ -25,6 +25,10 @@ def choose_sell_filter(context):
 def choose_buy_filter(context):
     context.app.secondary_page.choose_want_to_buy_option()
 
+@then('Filter the products by price range from {price1} to {price2} AED')
+def filter_products_by_price_range(context, price1, price2):
+    context.app.secondary_page.fiter_by_price(price1, price2)
+
 
 @then('Click on Apply filter Button')
 def apply_filter_button(context):
@@ -39,3 +43,8 @@ def verify_for_sale_tag_available(context):
 @then('Verify all cards have "Want to buy" tag')
 def verify_want_to_buy_tag_available(context):
     context.app.secondary_page.verify_buy_filter_works()
+
+
+@then('Verify the price in all cards is inside the range (1200000 - 2000000)')
+def verify_price_in_all_cards(context):
+    context.app.secondary_page.verify_price_filter_works()

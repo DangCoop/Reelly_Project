@@ -40,3 +40,17 @@ Feature: Testing a Secondary Deals Page functionality
     And Filter the products by want to buy option
     And Click on Apply filter Button
     And Verify all cards have "Want to buy" tag
+
+
+  Scenario: User can open the Secondary deals Page and Apply Filter by price
+    # Description: The user can navigates to the Secondary deals page and
+    # filter the products by price value.
+    Given Open Sign In page
+    When Enter email "antonov.resu@gmail.com" and "Internship2024!"
+    And Click Continue Button
+    And Click on the Secondary deals option
+    Then Verify correct URL opens for secondary
+    And Click on Filters Button
+    And Filter the products by price range from "1200000" to "2000000" AED
+    And Click on Apply filter Button
+    And Verify the price in all cards is inside the range (1200000 - 2000000)

@@ -13,6 +13,10 @@ class SecondaryPage(Page):
     LISTING_CARDS =(By.CSS_SELECTOR, ".listing-card")
     SALE_TAG = (By.CSS_SELECTOR, ".for-sale-block")
     BUY_TAG = (By.CSS_SELECTOR, ".for-sale-block")
+    PRICE1_FIELD = (By.CSS_SELECTOR, "[wized='unitPriceFromFilter']")
+    PRICE2_FIELD = (By.CSS_SELECTOR, "[wized='unitPriceToFilter']")
+    AED_PRICE = (By.CSS_SELECTOR, "div.number-price-text")
+
 
     def go_to_final_page(self):
 
@@ -260,7 +264,57 @@ class SecondaryPage(Page):
                     EC.text_to_be_present_in_element((By.CSS_SELECTOR, "[wized='currentPageProperties']"),
                                                      str(page_count))
                 )
+            except:
+                print("No more pages available or 'Next' button is not clickable.")
+                # Exit the loop if there are no more pages
+                break
 
+    def fiter_by_price (self, price1, price2):
+        self.input_text(price1,*self. PRICE1_FIELD)
+        self.input_text(price2,*self.PRICE2_FIELD)
+        #sleep(6)
+
+    def verify_price_filter_works(self):
+        page_count = 1
+
+        while True:
+            print(f"Checking page {page_count}...")
+
+            # Wait until all listing cards are visible on the current page
+            all_cards = self.wait.until(
+                EC.visibility_of_all_elements_located(self.AED_PRICE)
+            )
+
+            for card in all_cards:
+                aed_price_text = card.text.replace("AED", "").replace(",", "").strip()
+                if aed_price_text.isdigit():
+                    aed_price = int(aed_price_text)
+                    assert 1200000 <= aed_price <= 2000000, f"Product price {aed_price} is out of range"
+                    print(aed_price)
+                else:
+                    raise ValueError(f"Price text '{aed_price_text}' is not a valid number")
+
+            # Check if the "Next" button is present and clickable
+            try:
+                next_button = self.wait.until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, ".pagination__button.w-inline-block"))
+                )
+
+                # Check if the "Next" button is enabled; if not, we are on the last page
+                if not next_button.is_enabled():
+                    print("Reached the last page; no more pages to navigate.")
+                    # Exit the loop if the "Next" button is disabled
+                    break
+
+                # Click the "Next" button to go to the next page
+                next_button.click()
+                page_count += 1
+
+                # Wait for the page number or content to update (optional)
+                self.wait.until(
+                    EC.text_to_be_present_in_element((By.CSS_SELECTOR, "[wized='currentPageProperties']"),
+                                                     str(page_count))
+                )
             except:
                 print("No more pages available or 'Next' button is not clickable.")
                 # Exit the loop if there are no more pages
