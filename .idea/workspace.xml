@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7522c95e-6add-49f0-a89b-01cfd5bce86c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/features/Steps/off_plan_page_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/Tests/off_page_functionality_testing.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/off_plan_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/Steps/secondary_page_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/Steps/secondary_page_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/Tests/secondary_page_functionality_testing.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Tests/secondary_page_functionality_testing.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/secondary_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/secondary_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/Steps/main_page_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/Steps/main_page_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/Steps/settings_page-steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/Steps/settings_page-steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +40,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Behave.off_page_functionality_testing.feature.executor": "Run",
+    "Behave.off_page_functionality_testing.feature:User can navigate the Off Plan page and test pagination.executor": "Run",
     "Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter \"want to sell\".executor": "Run",
     "Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter by price.executor": "Run",
+    "Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and go through the Pagination.executor": "Run",
     "Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination.executor": "Run",
     "Behave.settings_page_ui_testing.feature.executor": "Run",
     "Behave.settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements.executor": "Run",
@@ -53,7 +60,38 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter by price">
+  <component name="RunManager" selected="Behave.off_page_functionality_testing.feature:User can navigate the Off Plan page and test pagination">
+    <configuration name="off_page_functionality_testing.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/off_page_functionality_testing.feature" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="off_page_functionality_testing.feature:User can navigate the Off Plan page and test pagination" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/off_page_functionality_testing.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="User can navigate the Off Plan page and test pagination" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter &quot;want to buy&quot;" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly_Project" />
       <option name="ENV_FILES" value="" />
@@ -67,22 +105,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/secondary_page_functionality_testing.feature" />
       <SCENRAIO_NAMES SCENRAIO_NAMES="User can open the Secondary deals Page and Apply Filter &quot;want to buy&quot;" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter &quot;want to sell&quot;" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="Reelly_Project" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/secondary_page_functionality_testing.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open the Secondary deals Page and Apply Filter &quot;want to sell&quot;" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -102,7 +124,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+    <configuration name="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and go through the Pagination" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly_Project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,33 +136,17 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/secondary_page_functionality_testing.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open the Secondary deals page and go through the pagination" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="Reelly_Project" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/settings_page_ui_testing.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="User can go to settings and see the right number of UI elements" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open the Secondary deals Page and go through the Pagination" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.off_page_functionality_testing.feature:User can navigate the Off Plan page and test pagination" />
+        <item itemvalue="Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and go through the Pagination" />
+        <item itemvalue="Behave.off_page_functionality_testing.feature" />
         <item itemvalue="Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter by price" />
         <item itemvalue="Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter &quot;want to buy&quot;" />
-        <item itemvalue="Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter &quot;want to sell&quot;" />
-        <item itemvalue="Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination" />
-        <item itemvalue="Behave.settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +170,14 @@
       <workItem from="1729040979299" duration="111000" />
       <workItem from="1729042438882" duration="48785000" />
       <workItem from="1730179910121" duration="20494000" />
-      <workItem from="1731284525205" duration="8229000" />
+      <workItem from="1731284525205" duration="12608000" />
+      <workItem from="1731984462839" duration="423000" />
+      <workItem from="1732072094601" duration="10471000" />
+      <workItem from="1732547583451" duration="427000" />
+      <workItem from="1733197728863" duration="1983000" />
+      <workItem from="1733457795690" duration="893000" />
+      <workItem from="1733717770652" duration="1354000" />
+      <workItem from="1733719183670" duration="4238000" />
     </task>
     <servers />
   </component>
@@ -188,6 +201,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_Page_and_go_through_the_Pagination.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and go through the Pagination Coverage Results" MODIFIED="1733723223759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature.coverage" NAME="off_page_functionality_testing.feature Coverage Results" MODIFIED="1733719212991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_User_can_navigate_the_Off_Plan_page_and_test_pagination.coverage" NAME="off_page_functionality_testing.feature:User can navigate the Off Plan page and test pagination Coverage Results" MODIFIED="1733723431008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_Page_and_Apply_Filter__want_to_sell_.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter &quot;want to sell&quot; Coverage Results" MODIFIED="1730345607555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_Page_and_Apply_Filter_by_price.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter by price Coverage Results" MODIFIED="1731472759692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$settings_page_ui_testing_feature.coverage" NAME="settings_page_ui_testing.feature Coverage Results" MODIFIED="1729051350051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
