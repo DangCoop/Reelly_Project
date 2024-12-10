@@ -10,6 +10,11 @@ class OffPlanPage(Page):
     CURRENT_PAGE_SELECTOR = (By.CSS_SELECTOR, "[wized='currentPageProperties']")
     NEXT_PAGE_BUTTON = (By.CSS_SELECTOR, ".pagination__button.w-inline-block")
     PREV_PAGE_BUTTON = (By.CSS_SELECTOR, "[wized='previousPageProperties']")
+    PRICE1_FIELD = (By.CSS_SELECTOR, "[wized='unitPriceFromFilter']")
+    PRICE2_FIELD = (By.CSS_SELECTOR, "[wized='unitPriceToFilter']")
+    FILTER_BUTTON = (By.CSS_SELECTOR, ".filter-button.w-inline-block")
+    #MOBILE_VER_FILTER_BUTTON = (By.CSS_SELECTOR, "div.filter-button")
+    APPLY_FILTER_BUTTON = (By.CSS_SELECTOR, ".button-filter.w-button")
 
     def verify_off_plan_page_enter(self):
         expected_text = 'Total projects'
@@ -107,3 +112,53 @@ class OffPlanPage(Page):
 
                 except Exception as e:
                     raise Exception(f"Error encountered during pagination: {e}")
+
+    def open_filter(self):
+        self.click(*self.FILTER_BUTTON)
+        # Change Locator for Mobile Version
+        #self.click(*self.MOBILE_VER_FILTER_BUTTON)
+
+    def filter_by_price(self, price1, price2):
+        self.input_text(price1, *self.PRICE1_FIELD)
+        self.input_text(price2, *self.PRICE2_FIELD)
+
+    def apply_filter(self):
+        self.click(*self.APPLY_FILTER_BUTTON)
+
+    def verify_price_range(self):
+        total_pages_element = self.driver.find_element(*self.TOTAL_PAGE_SELECTOR)
+        sleep(3)
+        total_pages = int(total_pages_element.text)  # Example: If the element text is "10"
+        print(f'Total pages: {total_pages}')
+
+        for current_page in range(1, total_pages + 1):
+            print(f"Processing page {current_page}")
+
+            # Wait for the data to load
+            self.wait.until(
+                EC.visibility_of_all_elements_located((By.CSS_SELECTOR, "div.price-value"))
+            )
+
+            # Process the data on the page
+            projects = self.find_elements(By.CSS_SELECTOR, "div.price-value")
+            for project in projects:
+                price_text = project.text.replace("AED", "").replace(",", "").strip()
+                if price_text.isdigit():
+                    price = int(price_text)
+                    assert 1200000 <= price <= 2000000, f"Product price {price} is out of range"
+                else:
+                    raise ValueError(f"Price text '{price_text}' is not a valid number")
+
+            # If not the last page, navigate to the next page
+            if current_page < total_pages:
+                next_button = self.find_element(By.CSS_SELECTOR, ".pagination__button.w-inline-block")
+                # Scroll element into view for Mobile Version
+                self.driver.execute_script("arguments[0].scrollIntoView(true);", next_button)
+                # Add sleep for mobile version
+                sleep(10)
+                next_button.click()
+                # Ensure the next page has loaded completely
+                self.wait.until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "div.price-value"))
+                )
+
