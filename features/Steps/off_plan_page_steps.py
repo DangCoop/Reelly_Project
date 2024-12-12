@@ -33,3 +33,8 @@ def click_apply_filter(context):
 @then('Checking that the price in all cards is inside the range (1200000 - 2000000)')
 def verify_price_inside_range_in_all_cards(context):
     context.app.off_plan_page.verify_price_range()
+
+
+@then('Verify each product contains a visible title and picture')
+def verify_projects_title_and_picture(context):
+    context.app.off_plan_page.check_title_and_img()

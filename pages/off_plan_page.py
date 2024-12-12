@@ -15,6 +15,9 @@ class OffPlanPage(Page):
     FILTER_BUTTON = (By.CSS_SELECTOR, ".filter-button.w-inline-block")
     #MOBILE_VER_FILTER_BUTTON = (By.CSS_SELECTOR, "div.filter-button")
     APPLY_FILTER_BUTTON = (By.CSS_SELECTOR, ".button-filter.w-button")
+    PROJECTS_LISTING = (By.CSS_SELECTOR, "a[wized='cardOfProperty']")
+    PROJECT_NAME = (By.CSS_SELECTOR, ".project-name")
+    PROJECT_IMAGE = (By.CSS_SELECTOR, ".project-image")
 
     def verify_off_plan_page_enter(self):
         expected_text = 'Total projects'
@@ -151,7 +154,7 @@ class OffPlanPage(Page):
 
             # If not the last page, navigate to the next page
             if current_page < total_pages:
-                next_button = self.find_element(By.CSS_SELECTOR, ".pagination__button.w-inline-block")
+                next_button = self.find_element(*self.NEXT_PAGE_BUTTON)
                 # Scroll element into view for Mobile Version
                 self.driver.execute_script("arguments[0].scrollIntoView(true);", next_button)
                 # Add sleep for mobile version
@@ -161,4 +164,30 @@ class OffPlanPage(Page):
                 self.wait.until(
                     EC.presence_of_element_located((By.CSS_SELECTOR, "div.price-value"))
                 )
+
+    def check_title_and_img(self):
+        # To see All Listings:
+        self.driver.execute_script("window.scrollBy(0, 2000)", "")
+        sleep(3)
+        self.driver.execute_script("window.scrollBy(0, 2000)", "")
+
+
+        #all_projects = self.wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "[wized='projectsListing']"))
+        #                )
+
+        all_projects = self.driver.find_elements(*self.PROJECTS_LISTING)
+        print(f"Number of projects found: {len(all_projects)}")
+
+        for project in all_projects:
+            title = project.find_element(*self.PROJECT_NAME).text
+            assert title, 'Product name not shown'
+            print(title)
+            project.find_element(*self.PROJECT_IMAGE).get_attribute('src')
+
+
+
+
+
+
+
 
