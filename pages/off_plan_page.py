@@ -182,7 +182,8 @@ class OffPlanPage(Page):
             title = project.find_element(*self.PROJECT_NAME).text
             assert title, 'Product name not shown'
             print(title)
-            project.find_element(*self.PROJECT_IMAGE).get_attribute('src')
+            project_img = project.find_element(*self.PROJECT_IMAGE).get_attribute('src')
+            assert project_img, 'Product image not shown'
 
 
 
