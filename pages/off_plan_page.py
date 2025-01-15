@@ -2,6 +2,7 @@ from pages.base_page import Page
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import Select
 from time import sleep
 
 
@@ -18,6 +19,8 @@ class OffPlanPage(Page):
     PROJECTS_LISTING = (By.CSS_SELECTOR, "a[wized='cardOfProperty']")
     PROJECT_NAME = (By.CSS_SELECTOR, ".project-name")
     PROJECT_IMAGE = (By.CSS_SELECTOR, ".project-image")
+    SALES_STATUS_FILTER = (By.CSS_SELECTOR, "[wized='saleStatusFilter']")
+    OUT_OFF_STOCK_BADGE = (By.CSS_SELECTOR, "")
 
     def verify_off_plan_page_enter(self):
         expected_text = 'Total projects'
@@ -185,10 +188,62 @@ class OffPlanPage(Page):
             project_img = project.find_element(*self.PROJECT_IMAGE).get_attribute('src')
             assert project_img, 'Product image not shown'
 
+    def open_sales_status_filter(self):
+        self.click(*self.SALES_STATUS_FILTER)
 
+    def select_out_off_stock_status(self):
+        dd = self.find_element(*self.SALES_STATUS_FILTER)
+        select = Select(dd)
+        select.select_by_value('Out of stock')
 
+    def check_out_off_stock_status(self):
+        total_pages = 24
+        # Start from page 1
+        page_count = 1
+        # Tracks the number of projects to detect changes
+        last_project_count = 0
 
+        while True:
+            print(f"Checking page {page_count}...")
 
+            # Wait until all projects are visible on the current page
+            all_projects = self.wait.until(
+                EC.visibility_of_all_elements_located(self.PROJECTS_LISTING)
+            )
 
+            for project in all_projects:
+                try:
+                    # Locate the status element within the product
+                    status_element = project.find_element(By.CSS_SELECTOR, 'div[wized="projectStatus"]')
+                    status_text = status_element.text.strip()
 
+                    # Verify the status text matches "Out of Stocks"
+                    assert status_text == "Out of stock", f"Expected 'Out of stock', but got '{status_text}'"
+                    print(f"Product verified with tag: {status_text}")
+                except Exception as e:
+                    print(f"Verification failed for a product: {e}")
+                    raise
 
+            if page_count == total_pages:
+                print("Reached the last page. Stopping the loop.")
+                break
+
+            # Check for the Next button and navigate if it's enabled
+            try:
+                next_button = self.wait.until(
+                    EC.presence_of_element_located(self.NEXT_PAGE_BUTTON)
+                )
+
+                if next_button.is_enabled():
+                    next_button.click()
+                    page_count += 1
+                    self.wait.until(
+                        EC.visibility_of_all_elements_located(self.PROJECTS_LISTING)
+                    )  # Wait for the new page to load
+                else:
+                    print("Reached the last page. Stopping the loop.")
+                    break  # Stop when the Next button is disabled
+
+            except Exception as e:
+                print(f"No more pages or error with pagination: {e}")
+                break

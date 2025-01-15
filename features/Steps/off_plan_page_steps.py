@@ -38,3 +38,18 @@ def verify_price_inside_range_in_all_cards(context):
 @then('Verify each product contains a visible title and picture')
 def verify_projects_title_and_picture(context):
     context.app.off_plan_page.check_title_and_img()
+
+
+@then('Click on Sale status Filter')
+def click_sale_status_filter(context):
+    context.app.off_plan_page.open_sales_status_filter()
+
+@then('Filter by sale status of "Out of Stocks"')
+def filter_out_out_stocks(context):
+    context.app.off_plan_page.select_out_off_stock_status()
+
+@then('Verify each product contains the "Out of Stocks" tag')
+def verify_product_contains_out_stocks(context):
+    context.app.off_plan_page.check_out_off_stock_status()
+
+

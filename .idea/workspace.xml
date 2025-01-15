@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7522c95e-6add-49f0-a89b-01cfd5bce86c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/Steps/off_plan_page_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/Steps/off_plan_page_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/Tests/off_page_functionality_testing.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Tests/off_page_functionality_testing.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/off_plan_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/off_plan_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,32 +34,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Behave.off_page_functionality_testing.feature.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_page_functionality_testing.feature:User can filter the off plan products by Unit price range.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_page_functionality_testing.feature:User can navigate the Off Plan page and test pagination.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_page_functionality_testing.feature:User can see titles and pictures on each product inside the Off Plan page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_page_functionality_testing.feature:Users can filter the off plan products by Unit price range.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter \&quot;want to sell\&quot;.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter by price.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and go through the Pagination.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.settings_page_ui_testing.feature.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/dang/Desktop/Careerist/Reelly_Project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Behave.off_page_functionality_testing.feature.executor": "Run",
+    "Behave.off_page_functionality_testing.feature:User can filter products by sale status of \"Out of Stocks\".executor": "Run",
+    "Behave.off_page_functionality_testing.feature:User can filter the off plan products by Unit price range.executor": "Run",
+    "Behave.off_page_functionality_testing.feature:User can navigate the Off Plan page and test pagination.executor": "Run",
+    "Behave.off_page_functionality_testing.feature:User can see titles and pictures on each product inside the Off Plan page.executor": "Run",
+    "Behave.off_page_functionality_testing.feature:Users can filter the off plan products by Unit price range.executor": "Run",
+    "Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter \"want to sell\".executor": "Run",
+    "Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter by price.executor": "Run",
+    "Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and go through the Pagination.executor": "Run",
+    "Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination.executor": "Run",
+    "Behave.settings_page_ui_testing.feature.executor": "Run",
+    "Behave.settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/dang/Desktop/Careerist/Reelly_Project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Behave.off_page_functionality_testing.feature:User can see titles and pictures on each product inside the Off Plan page">
+}]]></component>
+  <component name="RunManager" selected="Behave.off_page_functionality_testing.feature:User can filter products by sale status of &quot;Out of Stocks&quot;">
+    <configuration name="off_page_functionality_testing.feature:User can filter products by sale status of &quot;Out of Stocks&quot;" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/off_page_functionality_testing.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="User can filter products by sale status of &quot;Out of Stocks&quot;" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="off_page_functionality_testing.feature:User can filter the off plan products by Unit price range" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly_Project" />
       <option name="ENV_FILES" value="" />
@@ -122,29 +141,13 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and go through the Pagination" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="Reelly_Project" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/secondary_page_functionality_testing.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open the Secondary deals Page and go through the Pagination" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.off_page_functionality_testing.feature:User can filter products by sale status of &quot;Out of Stocks&quot;" />
         <item itemvalue="Behave.off_page_functionality_testing.feature:User can see titles and pictures on each product inside the Off Plan page" />
         <item itemvalue="Behave.off_page_functionality_testing.feature:Users can filter the off plan products by Unit price range" />
         <item itemvalue="Behave.off_page_functionality_testing.feature:User can filter the off plan products by Unit price range" />
         <item itemvalue="Behave.off_page_functionality_testing.feature:User can navigate the Off Plan page and test pagination" />
-        <item itemvalue="Behave.secondary_page_functionality_testing.feature:User can open the Secondary deals Page and go through the Pagination" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +179,8 @@
       <workItem from="1733457795690" duration="893000" />
       <workItem from="1733717770652" duration="1354000" />
       <workItem from="1733719183670" duration="31198000" />
-      <workItem from="1734060778931" duration="4010000" />
+      <workItem from="1734060778931" duration="6874000" />
+      <workItem from="1736223867809" duration="9654000" />
     </task>
     <servers />
   </component>
@@ -201,15 +205,16 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_Page_and_go_through_the_Pagination.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and go through the Pagination Coverage Results" MODIFIED="1733723223759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_User_can_filter_products_by_sale_status_of__Out_of_Stocks_.coverage" NAME="off_page_functionality_testing.feature:User can filter products by sale status of &quot;Out of Stocks&quot; Coverage Results" MODIFIED="1736923033897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_Page_and_Apply_Filter__want_to_sell_.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter &quot;want to sell&quot; Coverage Results" MODIFIED="1730345607555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$settings_page_ui_testing_feature.coverage" NAME="settings_page_ui_testing.feature Coverage Results" MODIFIED="1729051350051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_page_and_go_through_the_pagination.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination Coverage Results" MODIFIED="1730255252767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_Users_can_filter_the_off_plan_products_by_Unit_price_range.coverage" NAME="off_page_functionality_testing.feature:Users can filter the off plan products by Unit price range Coverage Results" MODIFIED="1733804908734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature.coverage" NAME="off_page_functionality_testing.feature Coverage Results" MODIFIED="1733719212991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_User_can_navigate_the_Off_Plan_page_and_test_pagination.coverage" NAME="off_page_functionality_testing.feature:User can navigate the Off Plan page and test pagination Coverage Results" MODIFIED="1733800874554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_Page_and_Apply_Filter__want_to_sell_.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter &quot;want to sell&quot; Coverage Results" MODIFIED="1730345607555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_Page_and_Apply_Filter_by_price.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter by price Coverage Results" MODIFIED="1731472759692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_User_can_see_titles_and_pictures_on_each_product_inside_the_Off_Plan_page.coverage" NAME="off_page_functionality_testing.feature:User can see titles and pictures on each product inside the Off Plan page Coverage Results" MODIFIED="1733983799880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_User_can_filter_the_off_plan_products_by_Unit_price_range.coverage" NAME="off_page_functionality_testing.feature:User can filter the off plan products by Unit price range Coverage Results" MODIFIED="1733803416877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_Project$settings_page_ui_testing_feature.coverage" NAME="settings_page_ui_testing.feature Coverage Results" MODIFIED="1729051350051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$settings_page_ui_testing_feature_User_can_go_to_settings_and_see_the_right_number_of_UI_elements.coverage" NAME="settings_page_ui_testing.feature:User can go to settings and see the right number of UI elements Coverage Results" MODIFIED="1729140929452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_page_and_go_through_the_pagination.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals page and go through the pagination Coverage Results" MODIFIED="1730255252767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_Users_can_filter_the_off_plan_products_by_Unit_price_range.coverage" NAME="off_page_functionality_testing.feature:Users can filter the off plan products by Unit price range Coverage Results" MODIFIED="1733804908734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

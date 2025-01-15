@@ -45,9 +45,9 @@ Feature: Testing a Off Plan Page Functionality
     And Click Continue Button
     And Click on Off Plan option
     Then Verify the right page opens
-    #And Click on Sale status Filter
-    #And Filter by sale status of "Out of Stocks"
-    #And Verify each product contains the "Out of Stocks" tag
+    And Click on Sale status Filter
+    And Filter by sale status of "Out of Stocks"
+    And Verify each product contains the "Out of Stocks" tag
 
   Scenario:  User can open product detail and see three options of visualization
     #This scenario validates the visualization options for a product on the Off Plan page.
