@@ -247,3 +247,55 @@ class OffPlanPage(Page):
             except Exception as e:
                 print(f"No more pages or error with pagination: {e}")
                 break
+
+    def go_to_first_project(self):
+        self.wait.until(
+            EC.visibility_of_all_elements_located(self.PROJECTS_LISTING)
+        )
+        self.click(By.CSS_SELECTOR, "[w-list-index-value='0']")  # index number means project number, can change it from 1-24
+
+    def check_visualization_options(self, option1, option2, option3):
+        visualization_options = self.wait.until(
+            EC.presence_of_all_elements_located((By.CLASS_NAME, "tabs-menu-project.w-tab-menu"))
+        )
+
+        # Retrieve and split the text of the options
+        options_text = []
+        for option in visualization_options:
+            options_text.extend(option.text.strip().split("\n")) # Split text by newline
+
+        # List to track errors
+        errors = []
+
+        # Check if the required options are present
+        for option in [option1, option2, option3]:
+            try:
+                assert option in options_text, f"Expected option '{option}' not found."
+                print(f"Verified presence of: {option}")
+            except AssertionError as e:
+                errors.append(str(e))
+
+        # If there are any errors, raise them after verifying all options
+        if errors:
+            raise AssertionError("Errors in visualization options verification:\n" + "\n".join(errors))
+
+    def check_visualization_options_clickable(self):
+        visualization_options = self.wait.until(
+            EC.presence_of_all_elements_located((By.CLASS_NAME, "tabs-menu-project.w-tab-menu"))
+        )
+
+        # Retrieve and split the text of the options
+        options_text = []
+        for option in visualization_options:
+            options_text.extend(option.text.strip().split("\n"))  # Split text by newline
+
+        print(f"Available options: {options_text}")
+
+        for option_element in visualization_options:
+            try:
+                assert option_element.is_displayed(), f"Option '{option_element.text}' is not visible."
+                assert option_element.is_enabled(), f"Option '{option_element.text}' is not clickable."
+                print(f"Verified '{option_element.text}' is visible and clickable.")
+            except AssertionError as e:
+                print(f"Verification failed: {e}")
+                raise

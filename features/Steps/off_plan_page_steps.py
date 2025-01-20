@@ -52,4 +52,15 @@ def filter_out_out_stocks(context):
 def verify_product_contains_out_stocks(context):
     context.app.off_plan_page.check_out_off_stock_status()
 
+@then('Click on the first project')
+def click_first_product(context):
+    context.app.off_plan_page.go_to_first_project()
 
+@then('Verify the visualization options are {option1},{option2},{option3}')
+def verify_visualization_options(context, option1, option2, option3):
+    context.app.off_plan_page.check_visualization_options(option1, option2, option3)
+
+
+@then('Verify the visualization options are clickable')
+def verify_visualization_options_clickable(context):
+    context.app.off_plan_page.check_visualization_options_clickable()

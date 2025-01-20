@@ -57,6 +57,6 @@ Feature: Testing a Off Plan Page Functionality
     When Enter email "antonov.resu@gmail.com" and "Internship2024!"
     And Click Continue Button
     And Click on Off Plan option
-    #Then Click on the first product
-    #And Verify the visualization options are "architecture", "interior", "lobby"
-    #And Verify the visualization options are clickable
+    Then Click on the first project
+    And Verify the visualization options are Architecture,Interior,Lobby
+    And Verify the visualization options are clickable
