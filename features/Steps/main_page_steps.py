@@ -17,3 +17,9 @@ def secondary_page(context):
 @when('Click on Off Plan option')
 def off_plan(context):
     context.app.main_page.click_off_plan_button()
+
+
+@when('Click on "Market" in the left-side menu')
+def market(context):
+    context.app.main_page.click_market_page_button()
+    sleep(3)

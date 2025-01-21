@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7522c95e-6add-49f0-a89b-01cfd5bce86c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/features/Steps/market_page_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/Tests/market_page_functionality_testing.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/market_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/Steps/off_plan_page_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/Steps/off_plan_page_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/Tests/off_page_functionality_testing.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Tests/off_page_functionality_testing.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/off_plan_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/off_plan_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/Steps/main_page_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/Steps/main_page_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Behave.market_page_functionality_testing.feature:User can open the Market tab and navigate through pagination.executor": "Run",
     "Behave.off_page_functionality_testing.feature.executor": "Run",
     "Behave.off_page_functionality_testing.feature:User can filter products by sale status of \"Out of Stocks\".executor": "Run",
     "Behave.off_page_functionality_testing.feature:User can filter the off plan products by Unit price range.executor": "Run",
@@ -61,7 +65,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Behave.off_page_functionality_testing.feature:User can open product detail and see three options of visualization">
+  <component name="RunManager" selected="Behave.market_page_functionality_testing.feature:User can open the Market tab and navigate through pagination">
+    <configuration name="market_page_functionality_testing.feature:User can open the Market tab and navigate through pagination" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/market_page_functionality_testing.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open the Market tab and navigate through pagination" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="off_page_functionality_testing.feature:User can filter products by sale status of &quot;Out of Stocks&quot;" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly_Project" />
       <option name="ENV_FILES" value="" />
@@ -75,22 +95,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/off_page_functionality_testing.feature" />
       <SCENRAIO_NAMES SCENRAIO_NAMES="User can filter products by sale status of &quot;Out of Stocks&quot;" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="off_page_functionality_testing.feature:User can filter the off plan products by Unit price range" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="Reelly_Project" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/Tests/off_page_functionality_testing.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="User can filter the off plan products by Unit price range" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -144,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.market_page_functionality_testing.feature:User can open the Market tab and navigate through pagination" />
         <item itemvalue="Behave.off_page_functionality_testing.feature:User can open product detail and see three options of visualization" />
         <item itemvalue="Behave.off_page_functionality_testing.feature:User can filter products by sale status of &quot;Out of Stocks&quot;" />
         <item itemvalue="Behave.off_page_functionality_testing.feature:User can see titles and pictures on each product inside the Off Plan page" />
         <item itemvalue="Behave.off_page_functionality_testing.feature:Users can filter the off plan products by Unit price range" />
-        <item itemvalue="Behave.off_page_functionality_testing.feature:User can filter the off plan products by Unit price range" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +186,7 @@
       <workItem from="1733719183670" duration="31198000" />
       <workItem from="1734060778931" duration="6874000" />
       <workItem from="1736223867809" duration="11011000" />
-      <workItem from="1737342995449" duration="11507000" />
+      <workItem from="1737342995449" duration="23247000" />
     </task>
     <servers />
   </component>
@@ -202,11 +206,6 @@
           <line>21</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pages/off_plan_page.py</url>
-          <line>258</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -219,6 +218,7 @@
     <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_Users_can_filter_the_off_plan_products_by_Unit_price_range.coverage" NAME="off_page_functionality_testing.feature:Users can filter the off plan products by Unit price range Coverage Results" MODIFIED="1733804908734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature.coverage" NAME="off_page_functionality_testing.feature Coverage Results" MODIFIED="1733719212991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_User_can_navigate_the_Off_Plan_page_and_test_pagination.coverage" NAME="off_page_functionality_testing.feature:User can navigate the Off Plan page and test pagination Coverage Results" MODIFIED="1733800874554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_Project$market_page_functionality_testing_feature_User_can_open_the_Market_tab_and_navigate_through_pagination.coverage" NAME="market_page_functionality_testing.feature:User can open the Market tab and navigate through pagination Coverage Results" MODIFIED="1737426327952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$secondary_page_functionality_testing_feature_User_can_open_the_Secondary_deals_Page_and_Apply_Filter_by_price.coverage" NAME="secondary_page_functionality_testing.feature:User can open the Secondary deals Page and Apply Filter by price Coverage Results" MODIFIED="1731472759692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_User_can_see_titles_and_pictures_on_each_product_inside_the_Off_Plan_page.coverage" NAME="off_page_functionality_testing.feature:User can see titles and pictures on each product inside the Off Plan page Coverage Results" MODIFIED="1733983799880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_Project$off_page_functionality_testing_feature_User_can_filter_the_off_plan_products_by_Unit_price_range.coverage" NAME="off_page_functionality_testing.feature:User can filter the off plan products by Unit price range Coverage Results" MODIFIED="1733803416877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
